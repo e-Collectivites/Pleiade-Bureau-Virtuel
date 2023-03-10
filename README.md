@@ -1,3 +1,7 @@
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+
+
 # Pléiade - Bureau Virtuel
 
 Pléiade est un bureau virtuel développé pour les besoins des agents et des élus des collectivités territoriales.
@@ -51,22 +55,21 @@ sudo usermod -aG www-data your_user
 sudo chown your_user:www-data :-R pleiade
 ```
 
-### Modules additionnels
+### Modules communautaires (contrib)
 
-Un ensemble de modules additionnels nécessaires au fonctionnement et à la sécurité sont installés (voir composer.json)
+Un ensemble de modules additionnels nécessaires au fonctionnement et à la sécurité sont installés (utiliser le fichier composer.json de ce répertoire)
 ```
 composer install
 ```
+## Modules Pléiade (custom)
 
-## Installer via Docker
+Les modules spécifiques au bureau virtuel sont positionnés [dans ce répertoire](https://github.com/e-Collectivites/pleiade-custom-modules).
 
-+ TODO
+## Thème Pléiade (custom)
 
-## Thème
+[Le thème](https://github.com/e-Collectivites/pleiade-custom-theme) est basé sur Bootstrap 5 et son élaboration a bénéficié d'un accompagnement par [l'Agence Nationale de la Cohésion des Territoires](https://agence-cohesion-territoires.gouv.fr/) (ANCT).
 
-Le template est basé sur Bootstrap 5 et son élaboration a bénéficié d'un accompagnement par [l'Agence Nationale de la Cohésion des Territoires](https://agence-cohesion-territoires.gouv.fr/) (ANCT).
 
-## Historique
+## Contacts / Développeurs
 
-Initialement développé par le syndicat mixte e-Collectivités pour les besoins de ses adhérents, le projet a été complètement revu pour essayer de répondre aux différents usages des collectivités.
-Le code est maintenant ouvert et sous licence GPL.
+[Quentin Marchand](https://github.com/QuentinEcollectivites) et [Romain Leclerc](https://github.com/RomainLLC)
