@@ -33,6 +33,7 @@ Voir la liste des applications sur [le site de LemonLDAP::NG](https://lemonldap-
 
 La procédure ci-dessous est valable pour un environnement serveur Linux Ubuntu 20.04+ / Debian 9.x
 Il est conseillé de créer un utilisateur système spécifique et de l'ajouter au groupe www-data
+Nul besoin de préciser qu'il faut installer apache et configurer les hosts afin de faire fonctionner le serveur web.
 
 ### Composer
 
@@ -57,13 +58,18 @@ sudo chown your_user:www-data :-R pleiade
 
 ### Modules communautaires (contrib)
 
-Un ensemble de modules additionnels nécessaires au fonctionnement et à la sécurité sont installés (utiliser le fichier composer.json de ce répertoire)
+Un ensemble de modules additionnels nécessaires au fonctionnement et à la sécurité sont installés (utiliser le fichier composer.json de ce répertoire). Un module pratique permettant de faire des actions est aussi utile à l'installation. 
 ```
+composer require drupal/drush
 composer install
 ```
 ## Modules Pléiade (custom)
 
 Les modules spécifiques au bureau virtuel sont positionnés [dans ce répertoire](https://github.com/e-Collectivites/pleiade-custom-modules).
+
+## Actions à effectuer avant l'activation du thème (custom)
+
+Il faut définir l'image par défaut pour l'utilisateur. En administrateur, allez sur Configuration dans le panneau administrateur, puis sur paramètres de compte, puis gérer les champs. Modifiez ensuite le champ Image de profil. Défilez ensuite pour définir l'image par défaut de l'utilisateur.
 
 ## Thème Pléiade (custom)
 
