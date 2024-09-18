@@ -74,6 +74,11 @@ Il faut définir l'image par défaut pour l'utilisateur. En administrateur, alle
 ## Thème Pléiade (custom)
 
 [Le thème](https://github.com/e-Collectivites/pleiade-custom-theme) est basé sur Bootstrap 5 et son élaboration a bénéficié d'un accompagnement par [l'Agence Nationale de la Cohésion des Territoires](https://agence-cohesion-territoires.gouv.fr/) (ANCT).
+Pour l'installer il est nécessaire d'installer le thème bootstrap, sur lequel se base le thème Pléiade :
+
+```
+composer require drupal/bootstrap5
+```
 
 
 ## Contacts / Développeurs
