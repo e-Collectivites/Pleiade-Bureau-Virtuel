@@ -60,8 +60,9 @@ sudo chown your_user:www-data :-R pleiade
 
 ### Modules communautaires (contrib)
 
-Un ensemble de modules additionnels nécessaires au fonctionnement et à la sécurité sont installés (utiliser le fichier composer.json de ce répertoire). Un module pratique permettant de faire des actions est aussi utile à l'installation. 
+Un ensemble de modules additionnels nécessaires au fonctionnement et à la sécurité sont installés (utiliser le fichier composer.json de ce répertoire). Un module pratique permettant de faire des actions est aussi utile à l'installation ( drush ) . Le module devel permet de gérer tous les problème possible côté développment ( vidage de cache, affichage de variable côté code ). 
 ```
+composer require drupal/devel
 composer require drupal/drush
 composer install
 ```
