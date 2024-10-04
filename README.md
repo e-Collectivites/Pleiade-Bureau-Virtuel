@@ -49,6 +49,8 @@ Installer Apache ou Nginx en suivant [la documentation de Drupal](https://www.dr
 
 ### Drupal core
 
+WARNING : La version 10.3 de Drupal ajoute une nouvelle fonctionnalité forcant l'utilisateur à confirmer sa déconnexion lorsqu'il est connecté. Le module CAS, en dernière version ne prend pas en compte cette nouvelle fonctionnalité. Rendant son utilisatation impossible. Il est donc necéssaire d'installer Drupal en version 10.2.8 MAXIMUM. 
+
 ```
 cd /var/www
 sudo composer create-project drupal/recommended-project pleiade
